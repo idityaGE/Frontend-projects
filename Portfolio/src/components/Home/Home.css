@@ -1,0 +1,165 @@
+#main{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+#page1{
+    position: relative;
+}
+
+.top{
+    margin:30px 30px;
+    
+}
+
+.top p{
+    font-size: 1.4rem;
+    color: #333;
+}
+
+#name{
+    font-size: 5rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 99;
+    padding: 0px 30px;
+}
+
+#nav>a {
+    text-decoration: none;
+    transition-duration: 0.6s;    
+}
+
+
+.logo:hover{
+    transform: scale(1.1);
+    text-shadow: -1px 1px 2px black;
+}
+
+#nav>a>h3 {
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+#nav-links {
+    display: flex;
+    justify-self: flex-end;
+    width: 15vw;
+    justify-content: space-evenly;
+}
+
+#nav-links>a>img {
+    width: 5vh;
+    cursor: pointer;
+    padding: 0 5px;
+    transition-duration: 0.5s;
+}
+
+#nav>.links {
+    height: 10vh;
+    width: 15vw;
+}
+
+.links img:hover{
+    transform: scale(1.1);
+}
+
+#loop {
+    display: flex;
+    position: relative;
+    top: 40%;
+    height: 25%;
+    width: 100%;
+    font-size: 10vw;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+#loop>h1 {
+    font-weight: 400;
+    animation-name: anim ;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loop>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+#loop>h1>b>i>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+
+@keyframes anim {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.shape-motion2 {
+    z-index: 1;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+
+.shape12 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: rgb(231, 65, 5);
+    filter: blur(30px);
+    position: absolute;
+    animation-name: shapeAnim;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shapeAnim {
+    from {
+        transform: translate(40%, -10%) skew(-10deg);
+    }
+
+    to {
+        transform: translate(-20%, 30%) skew(20deg);
+    }
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#skills{
+    height: 90vh;
+    width: 90vw;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+}

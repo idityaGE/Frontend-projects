@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+    border-radius: 10px;
+    /* padding: 20px; */
+    margin-left:85px;
+    margin-top: 10px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-top: 20px;
+}

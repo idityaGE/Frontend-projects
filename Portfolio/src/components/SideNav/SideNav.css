@@ -1,0 +1,90 @@
+*{
+    font-family: Nexa, sans-serif;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75px;
+    background-color: #EFEAE3;
+    transition: width 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 3px 0 8px -3px #0000006d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav-bottom{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Nav-bottom img{
+    width: 55px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.Nav-bottom h4{
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.Nav-top{
+    margin-top: 30px;
+}
+
+.Nav-center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.Nav-center div{
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: black 1px solid;
+    border-radius: 15px;
+    padding: 5px 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Nav-center div::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    left: 0;
+    top: -100%;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+    z-index: -1;
+}
+
+.Nav-center div:hover::after{
+    top: -0px;
+    border-radius:0;
+    cursor: pointer;
+}
+
+.Nav-center div:hover .nav-link{
+    color: white;
+}
